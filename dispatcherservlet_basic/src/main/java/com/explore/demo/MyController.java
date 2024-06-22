@@ -1,0 +1,15 @@
+package com.explore.demo;
+
+
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MyController {
+
+    @GetMapping("/")
+    public String home() {
+        return "Welcome to the Custom Dispatcher Servlet!";
+    }
+}
